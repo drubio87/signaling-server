@@ -1,0 +1,25 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+       {
+          "type": "node",
+          "request": "launch",
+          "name": "Launch Program",
+          "skipFiles": ["<node_internals>/**"],
+          "program": "${workspaceFolder}/signaling-client-backup.js"  // Replace with your entry point file
+       },
+       {
+         "type": "node",
+         "request": "launch",
+         "name": "Launch Server",
+         "skipFiles": ["<node_internals>/**"],
+         "program": "${workspaceFolder}/server.js"
+     }
+    ],
+    "compounds": [
+      {
+          "name": "Launch Both",
+          "configurations": ["Launch Signaling Client", "Launch Server"]
+      }
+  ]
+ }
