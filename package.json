@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^1.8.4",
+    "node-pre-gyp": "^0.17.0",
     "wrtc": "^0.4.7",
     "ws": "^8.18.1"
   }
